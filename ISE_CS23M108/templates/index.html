@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Model Testing & Training</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main_style.css') }}">
+    <style>
+        /* Additional CSS for the GIF */
+        .gif-container {
+            position: fixed;
+            bottom: 25%;
+            z-index: 2; /* Ensure the GIF is above the background animation */
+        }
+        .left-gif {
+            left: 25%;
+            transform: translateX(-50%);
+        }
+
+        .right-gif {
+            right: 25%;
+            transform: translateX(50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Energy Measurement of System</h1>
+    <div class="links">
+        <a href="{{ url_for('testing') }}">Testing</a>
+        <a href="{{ url_for('training') }}">Training</a>
+    </div>
+    
+    <!-- Container for the GIF -->
+    <div class="gif-container left-gif">
+        <img src="static/energy1.gif" alt="Energy GIF">
+    </div>
+
+    <!-- Container for the right GIF -->
+    <div class="gif-container right-gif">
+        <img src="static/energy2.gif" alt="Another Energy GIF">
+    </div>
+</body>
+</html>
+

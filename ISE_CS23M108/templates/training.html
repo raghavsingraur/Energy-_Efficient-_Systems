@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='train_style.css') }}">
+</head>
+<body>
+    <h1>Training Page</h1>
+    <form action="{{ url_for('training') }}" method="post" enctype="multipart/form-data">
+        <label for="training_file">Upload Training Python File:</label><br>
+        <input type="file" id="training_file" name="training_file" accept=".py"><br><br>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>

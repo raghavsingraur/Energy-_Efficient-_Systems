@@ -1,0 +1,60 @@
+/* train_style.css */
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+     background-image: url('train.jpeg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-color: #f8f8f8;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 50px;
+}
+
+/* Form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* File Input */
+input[type="file"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
